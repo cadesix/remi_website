@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-gif img {
+    max-width: 100%;
+    height: auto;
+    max-height: 90vh;
+}
+
+@media (max-width: 600px) {
+    .centered-gif img {
+        max-height: 50vh;
+    }
+}
