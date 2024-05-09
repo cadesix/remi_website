@@ -10,7 +10,7 @@ body {
 .centered-gif img {
     max-width: 100%;
     height: auto;
-    max-height: 90vh;
+    max-height: 50vh;
 }
 
 @media (max-width: 600px) {
