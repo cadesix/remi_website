@@ -50,30 +50,55 @@ body {
     max-height: 50vh; /* Limits the image height to 50% of the viewport height */
 }
 
+.bulletPoints > * {
+  text-align: left;
+  margin: auto;
+  margin-bottom: 24px;
+  max-width: 50%;
+}
+
+.sectionTitle {
+  font-size: 36;
+  font-weight: bold;
+}
+
+.sectionContent {
+  line-height: 24px;
+}
+
 @media (max-width: 600px) {
+
   body {
       max-width: 100%;
-      font-size: 24px;
+      font-size: 20px;
   }
+
   .content {
     max-width: 90%;
     word-wrap: break-word;
   }
 
   .above-the-fold img {
-    max-width: 70%;
+    max-width: 90%;
     margin-bottom: 20%;
   }
 
-    .innerContent img, .content img {
-        max-width: 80%;
-    }
-    .centered-gif img {
-        margin-top: 20%; /* Reduces the margin to better fit mobile screens */
-    }
-    .content > *, .innerContent > * {
-        margin-bottom: 96px; /* Reduces spacing for a tighter layout */
-    }
-    .content div, .innerContent div {
-    }
+  .innerContent img, .content img {
+      max-width: 80%;
+  }
+
+  .centered-gif img {
+      margin-top: 20%; /* Reduces the margin to better fit mobile screens */
+  }
+
+  .content > *, .innerContent > * {
+      margin-bottom: 96px; /* Reduces spacing for a tighter layout */
+  }
+
+  .bulletPoints > * {
+    text-align: left;
+    margin: auto;
+    margin-bottom: 24px;
+    max-width: 90%;
+  }
 }
