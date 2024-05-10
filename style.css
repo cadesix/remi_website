@@ -6,10 +6,6 @@ html::-webkit-scrollbar {
     display: none;
 }
 
-* {
-    box-sizing: border-box; /* Includes padding and borders in the element's total width and height */
-}
-
 body {
     margin: 0;
     background-color: black;
@@ -20,11 +16,11 @@ body {
     grid-template-columns: 1fr; /* Creates a single column */
     font-family: helvetica;
     text-align: center;
-    overflow-x: hidden;
 }
 
 .above-the-fold {
     height: 100vh;
+    max-width: 90%
 }
 
 .content {
@@ -54,19 +50,25 @@ body {
 
 @media (max-width: 600px) {
   body {
-      padding: 10px; /* Reduces padding on smaller screens */
+      max-width: 75%;
+  }
+  .above-the-fold {
+      height: 75vh;
       max-width: 90%;
   }
   .content {
-    max-width: 100%;
+    max-width: 70%;
+    word-wrap: break-word;
   }
-    .centered-gif img, .innerContent img, .content img {
-        max-height: 100vh;
+
+  .centered-gif img {
+    padding-top: 50%;
+  }
+
+    .innerContent img, .content img {
         max-width: 80%;
     }
-    .centered-gif img {
-        margin-top: 20%; /* Reduces the margin to better fit mobile screens */
-    }
+
     .content > *, .innerContent > * {
         margin-bottom: 24px; /* Reduces spacing for a tighter layout */
     }
