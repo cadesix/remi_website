@@ -10,18 +10,22 @@ body {
     margin: 0;
     background-color: black;
     word-wrap: break-word;
-    display: grid;
-    place-items: center; /* This shorthand centers content both horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: white;
-    grid-template-columns: 1fr; /* Creates a single column */
     font-family: helvetica;
     text-align: center;
 }
 
 .above-the-fold {
-    height: 100vh;
-    max-width: 90%;
-    margin-bottom: 20%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    position: relative; /* Needed for absolute positioning of the CTA */
 }
 
 .above-the-fold img {
@@ -42,16 +46,13 @@ body {
 
 .innerContent img, .content img {
     height: auto; /* Maintains the aspect ratio of the images */
+    max-width: 90%;
     max-height: 50vh; /* Limits the image height to 50% of the viewport height */
 }
 
 @media (max-width: 600px) {
   body {
-      max-width: 90%;
-  }
-  .above-the-fold {
-      height: 100vh;
-      max-width: 90%;
+      max-width: 100%;
   }
   .content {
     max-width: 70%;
