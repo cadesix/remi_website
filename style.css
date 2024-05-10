@@ -10,12 +10,11 @@ body {
     margin: 0;
     background-color: black;
     word-wrap: break-word;
-    display: grid;
-    place-items: center; /* This shorthand centers content both horizontally and vertically */
     color: white;
-    grid-template-columns: 1fr; /* Creates a single column */
     font-family: helvetica;
     text-align: center;
+    margin: auto auto;
+    overflow-x: hidden;
 }
 
 .above-the-fold {
@@ -53,7 +52,7 @@ body {
       max-width: 75%;
   }
   .above-the-fold {
-      height: 75vh;
+      height: 100vh;
       max-width: 90%;
   }
   .content {
