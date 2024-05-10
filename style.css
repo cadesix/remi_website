@@ -29,7 +29,7 @@ body {
 }
 
 .above-the-fold img {
-  max-width: 50%;
+  max-width: 65%;
 }
 
 .content {
@@ -46,19 +46,18 @@ body {
 
 .innerContent img, .content img {
     height: auto; /* Maintains the aspect ratio of the images */
-    max-width: 90%;
-    max-height: 50vh; /* Limits the image height to 50% of the viewport height */
+    max-width: 100%;
 }
 
 .bulletPoints > * {
   text-align: left;
   margin: auto;
   margin-bottom: 24px;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 .sectionTitle {
-  font-size: 36;
+  font-size: 36px;
   font-weight: bold;
 }
 
