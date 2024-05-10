@@ -6,24 +6,35 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+* {
+    box-sizing: border-box; /* Includes padding and borders in the element's total width and height */
+}
+
 body {
     margin: 0;
     background-color: black;
+    word-wrap: break-word;
+    max-width: 50vw;
     display: grid;
     place-items: center; /* This shorthand centers content both horizontally and vertically */
     color: white;
     grid-template-columns: 1fr; /* Creates a single column */
-    padding: 20px; /* Optional: Adds padding around the content */
     font-family: helvetica;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .above-the-fold {
-  height: 100vh;
+    height: 100vh;
+    max-width: 75%;
+}
+
+.content {
+  max-width: 75%;
 }
 
 .centered-gif img {
-    max-width: 100%; /* Adjusted to give some space around the image */
+    max-width: 50vw; /* Adjusted to give some space around the image */
     margin-top: 40%;
     height: auto;
     max-height: 50vh;
@@ -38,8 +49,28 @@ body {
     margin-bottom: 48px;
 }
 
+.innerContent img, .content img {
+    height: auto; /* Maintains the aspect ratio of the images */
+    max-height: 50vh; /* Limits the image height to 50% of the viewport height */
+}
+
 @media (max-width: 600px) {
-    .centered-gif img {
+  body {
+      padding: 10px; /* Reduces padding on smaller screens */
+      max-width: 90%;
+  }
+    .centered-gif img, .innerContent img, .content img {
         max-height: 100vh;
+        max-width: 50%;
+    }
+    .centered-gif img {
+        margin-top: 20%; /* Reduces the margin to better fit mobile screens */
+        margin-bottom: 10%;
+    }
+    .content > *, .innerContent > * {
+        margin-bottom: 24px; /* Reduces spacing for a tighter layout */
+    }
+    .content div, .innerContent div {
+        font-size: 14px;
     }
 }
