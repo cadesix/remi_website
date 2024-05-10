@@ -10,28 +10,26 @@ body {
     margin: 0;
     background-color: black;
     word-wrap: break-word;
+    display: grid;
+    place-items: center; /* This shorthand centers content both horizontally and vertically */
     color: white;
+    grid-template-columns: 1fr; /* Creates a single column */
     font-family: helvetica;
     text-align: center;
-    margin: auto auto;
-    overflow-x: hidden;
 }
 
 .above-the-fold {
     height: 100vh;
-    max-width: 90%
+    max-width: 90%;
+    margin-bottom: 20%;
+}
+
+.above-the-fold img {
+  max-width: 50%;
 }
 
 .content {
   max-width: 90%;
-}
-
-.centered-gif img {
-    max-width: 50vw; /* Adjusted to give some space around the image */
-    margin-top: 40%;
-    height: auto;
-    max-height: 50vh;
-    margin-bottom: 20%;
 }
 
 .content > * {
@@ -49,7 +47,7 @@ body {
 
 @media (max-width: 600px) {
   body {
-      max-width: 75%;
+      max-width: 90%;
   }
   .above-the-fold {
       height: 100vh;
@@ -61,13 +59,15 @@ body {
   }
 
   .centered-gif img {
-    padding-top: 50%;
+    margin-top: 50%;
   }
 
     .innerContent img, .content img {
         max-width: 80%;
     }
-
+    .centered-gif img {
+        margin-top: 20%; /* Reduces the margin to better fit mobile screens */
+    }
     .content > *, .innerContent > * {
         margin-bottom: 24px; /* Reduces spacing for a tighter layout */
     }
