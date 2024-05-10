@@ -4,11 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <title>Remi</title>
 </head>
 <body>
+  <div class="above-the-fold">
     <div class="centered-gif">
         <img src="letemcook.gif" alt="Centered GIF">
     </div>
+
+    <div
+    data-aos="fade-in"
+    data-aos-delay="1000"
+    data-aos-duration="3000"
+    >
+      Scroll<br>
+      ↓
+    </div>
+  </div>
+
+  <div class="content">
+    <div data-aos="fade-in">Food is a universal language.</div>
+    <div data-aos="fade-in"
+    data-aos-delay="1200">And cooking content is <u>everywhere.</u></div>
+    <div class="innerContent"
+    data-aos="fade-in"
+    data-aos-delay="1300">
+      <div>But recipe apps are still stuck in 2001.</div>
+      <img src="img1.png"></img>
+      <div>And nobody is helping cooking creators monetize.</div>
+      <img src="img2.png"></img>
+      <div>We wanted a place fo find good recipes that are easy to follow, so we built one - with creators first in mind.</div>
+      <img src="img3.png"></img>
+      <div>Because we believe that creators are the future of food.</div>
+    </div>
+  </div>
+
+    <!-- <div class="content">
+      <div data-aos="fade-in">Food is a universal language.</div>
+      <div data-aos="fade-in"
+      data-aos-delay="1200">And cooking content is <u>everywhere.</u></div>
+      <div data-aos="fade-in"
+      data-aos-delay="1300">But recipe apps are still stuck in 2001.</div>
+      <img src="img1.png" data-aos="fade-in" data-aos-delay="1300" data-aos-duration="1000"></img>
+      <div data-aos="fade-in"
+      data-aos-delay="1400"
+      data-aos-duration="1000">And nobody is helping cooking creators monetize.</div>
+      <img src="img2.png" data-aos="fade-in" data-aos-delay="1400" data-aos-duration="1000"></img>
+      <div data-aos="fade-in"
+      data-aos-delay="1500"
+      data-aos-offset="-100"
+      data-aos-duration="1000">We wanted a place fo find good recipes that are easy to follow, so we built one - with creators first in mind.</div>
+      <img src="img3.png" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-100" data-aos-duration="1000"></img>
+      <div data-aos="fade-in"
+      data-aos-delay="1600"
+      data-aos-offset="-120"
+      data-aos-duration="1000">Because we believe that creators are the future of food.</div>
+    </div> -->
+
+
+    <script>
+      AOS.init({
+        offset: -20, // offset (in px) from the original trigger point
+        delay: 500, // values from 0 to 3000, with step 50ms
+        duration: 2000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
+
 </body>
 </html>

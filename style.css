@@ -1,20 +1,45 @@
+html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
-    height: 100vh;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center; /* This shorthand centers content both horizontally and vertically */
+    color: white;
+    grid-template-columns: 1fr; /* Creates a single column */
+    padding: 20px; /* Optional: Adds padding around the content */
+    font-family: helvetica;
+    text-align: center;
+}
+
+.above-the-fold {
+  height: 100vh;
 }
 
 .centered-gif img {
-    max-width: 100%;
+    max-width: 100%; /* Adjusted to give some space around the image */
+    margin-top: 40%;
     height: auto;
     max-height: 50vh;
+    margin-bottom: 20%;
+}
+
+.content > * {
+    margin-bottom: 48px;
+}
+
+.innerContent > * {
+    margin-bottom: 48px;
 }
 
 @media (max-width: 600px) {
     .centered-gif img {
-        max-height: 50vh;
+        max-height: 100vh;
     }
 }
