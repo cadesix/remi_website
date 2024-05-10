@@ -53,14 +53,16 @@ body {
 @media (max-width: 600px) {
   body {
       max-width: 100%;
+      font-size: 24px;
   }
   .content {
-    max-width: 70%;
+    max-width: 90%;
     word-wrap: break-word;
   }
 
-  .centered-gif img {
-    margin-top: 50%;
+  .above-the-fold img {
+    max-width: 70%;
+    margin-bottom: 20%;
   }
 
     .innerContent img, .content img {
@@ -70,9 +72,8 @@ body {
         margin-top: 20%; /* Reduces the margin to better fit mobile screens */
     }
     .content > *, .innerContent > * {
-        margin-bottom: 24px; /* Reduces spacing for a tighter layout */
+        margin-bottom: 96px; /* Reduces spacing for a tighter layout */
     }
     .content div, .innerContent div {
-        font-size: 14px;
     }
 }
