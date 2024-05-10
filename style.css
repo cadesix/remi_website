@@ -14,7 +14,6 @@ body {
     margin: 0;
     background-color: black;
     word-wrap: break-word;
-    max-width: 50vw;
     display: grid;
     place-items: center; /* This shorthand centers content both horizontally and vertically */
     color: white;
@@ -26,11 +25,10 @@ body {
 
 .above-the-fold {
     height: 100vh;
-    max-width: 75%;
 }
 
 .content {
-  max-width: 75%;
+  max-width: 90%;
 }
 
 .centered-gif img {
@@ -59,13 +57,15 @@ body {
       padding: 10px; /* Reduces padding on smaller screens */
       max-width: 90%;
   }
+  .content {
+    max-width: 100%;
+  }
     .centered-gif img, .innerContent img, .content img {
         max-height: 100vh;
-        max-width: 50%;
+        max-width: 80%;
     }
     .centered-gif img {
         margin-top: 20%; /* Reduces the margin to better fit mobile screens */
-        margin-bottom: 10%;
     }
     .content > *, .innerContent > * {
         margin-bottom: 24px; /* Reduces spacing for a tighter layout */
