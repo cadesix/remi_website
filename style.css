@@ -29,7 +29,7 @@ body {
 }
 
 .above-the-fold img {
-  max-width: 65%;
+  width: 500px;
 }
 
 .content {
@@ -46,7 +46,7 @@ body {
 
 .innerContent img, .content img {
     height: auto; /* Maintains the aspect ratio of the images */
-    max-width: 100%;
+    max-width: 60%;
 }
 
 .bulletPoints > * {
