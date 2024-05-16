@@ -69,12 +69,17 @@ body {
   display: none;
 }
 
+.commentsmobile {
+  display: none;
+}
+
 .footerImg {
   width: 72px;
   margin-top: 96px;
 }
 
 @media (max-width: 600px) {
+
   body {
     max-width: 90%;
     font-size: 16px;
@@ -99,6 +104,10 @@ body {
     justify-content: center;
   }
 
+  .sectionContent {
+    font-size: 16px;
+  }
+
   .content {
     max-width: 90%;
     word-wrap: break-word;
@@ -116,7 +125,15 @@ body {
     display: flex;
   }
 
+  .commentsmobile {
+    display: flex;
+  }
+
   .NYT {
+    display: none;
+  }
+
+  .comments {
     display: none;
   }
 }
