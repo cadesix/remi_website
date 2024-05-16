@@ -137,4 +137,8 @@ body {
   .comments {
     display: none;
   }
+
+  .footerImg {
+    margin-bottom: 32px;
+  }
 }
