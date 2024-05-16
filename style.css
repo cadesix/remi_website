@@ -1,31 +1,32 @@
 html {
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 html::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 body {
-    margin: 0;
-    background-color: black;
-    word-wrap: break-word;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: helvetica;
-    text-align: center;
+  margin: auto;
+  max-width: 90%;
+  background-color: black;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: helvetica;
+  text-align: center;
 }
 
 .above-the-fold {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    position: relative; /* Needed for absolute positioning of the CTA */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .above-the-fold img {
@@ -37,39 +38,36 @@ body {
 }
 
 .content > * {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
-.innerContent > * {
-    margin-bottom: 48px;
+.header1 {
+  width: 150%;
 }
 
-.innerContent img, .content img {
-    height: auto; /* Maintains the aspect ratio of the images */
-    max-width: 60%;
+.content img {
+  height: auto; /* Maintains the aspect ratio of the images */
+  max-width: 60%;
 }
 
-.bulletPoints > * {
-  text-align: left;
-  margin: auto;
+.header2 {
   margin-bottom: 24px;
-  max-width: 70%;
-}
-
-.sectionTitle {
-  font-size: 36px;
-  font-weight: bold;
 }
 
 .sectionContent {
-  line-height: 24px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.footerImg {
+  width: 72px;
+  margin-top: 96px;
 }
 
 @media (max-width: 600px) {
-
   body {
-      max-width: 100%;
-      font-size: 20px;
+    max-width: 90%;
+    font-size: 16px;
   }
 
   .content {
@@ -77,27 +75,20 @@ body {
     word-wrap: break-word;
   }
 
+  .content > * {
+    margin-bottom: 32px;
+  }
+
+  .content img {
+    max-width: 100%;
+  }
+
   .above-the-fold img {
     max-width: 90%;
     margin-bottom: 20%;
   }
 
-  .innerContent img, .content img {
-      max-width: 80%;
-  }
-
   .centered-gif img {
-      margin-top: 20%; /* Reduces the margin to better fit mobile screens */
-  }
-
-  .content > *, .innerContent > * {
-      margin-bottom: 96px; /* Reduces spacing for a tighter layout */
-  }
-
-  .bulletPoints > * {
-    text-align: left;
-    margin: auto;
-    margin-bottom: 24px;
-    max-width: 90%;
+    margin-top: 20%; /* Reduces the margin to better fit mobile screens */
   }
 }
