@@ -41,8 +41,17 @@ body {
   margin-bottom: 48px;
 }
 
-.header1 {
-  width: 150%;
+.header {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.header img {
+  max-height: 100px;
 }
 
 .content img {
@@ -50,13 +59,14 @@ body {
   max-width: 60%;
 }
 
-.header2 {
-  margin-bottom: 24px;
+.sectionContent {
+  width: 600px;
+  text-align: left;
+  margin: auto;
 }
 
-.sectionContent {
-  text-align: left;
-  max-width: 100%;
+.NYTmobile {
+  display: none;
 }
 
 .footerImg {
@@ -68,6 +78,25 @@ body {
   body {
     max-width: 90%;
     font-size: 16px;
+  }
+
+  .above-the-fold img {
+    max-width: 90%;
+    margin-bottom: 20%;
+  }
+
+  .centered-gif img {
+    margin-top: 20%;
+  }
+
+  .header {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 
   .content {
@@ -83,12 +112,11 @@ body {
     max-width: 100%;
   }
 
-  .above-the-fold img {
-    max-width: 90%;
-    margin-bottom: 20%;
+  .NYTmobile {
+    display: flex;
   }
 
-  .centered-gif img {
-    margin-top: 20%; /* Reduces the margin to better fit mobile screens */
+  .NYT {
+    display: none;
   }
 }
