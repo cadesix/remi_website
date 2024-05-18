@@ -42,6 +42,8 @@ jobs:
     
     - name: Deploy with gh-pages
       run: |
-        git remote set-url origin https://git:${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}@github.com/${https://github.com/cadesix/remi_website.git}.git
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${https://github.com/cadesix/remi_website}.git
         npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       working-directory: ./ChefPage
