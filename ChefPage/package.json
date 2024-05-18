@@ -2,7 +2,7 @@
   "name": "ChefPage",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://remi.recipes/chef",
+  "homepage": "http://cadesix.github.io/remi_website/ChefPage",
   "type": "module",
   "scripts": {
     "dev": "vite",
