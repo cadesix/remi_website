@@ -5,7 +5,8 @@
   "homepage": "http://cadesix.github.io/remi_website/ChefPage",
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "test": "echo \"No tests specified\" && exit 0",
