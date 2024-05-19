@@ -1,8 +1,8 @@
 {
+  "homepage": "http://cadesix.github.io/remi_website/ChefPage",
   "name": "ChefPage",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://cadesix.github.io/remi_website/ChefPage",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
