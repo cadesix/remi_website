@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: ChefPage/package-lock.json
 
-    - name: Change to project directory  # Make sure we're in the right directory
+    - name: Change to project directory  # Make sure we're in the right directory.
       run: cd ChefPage
 
     - run: npm ci
