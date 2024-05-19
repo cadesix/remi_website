@@ -39,6 +39,9 @@ jobs:
       run: npm test
       working-directory: ./ChefPage
 
+    - name: Create .nojekyll file
+      run: echo "" > ./ChefPage/dist/.nojekyll
+
     - name: Deploy with gh-pages
       run: |
         git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
