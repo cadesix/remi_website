@@ -68,6 +68,7 @@ body {
 .goal {
   justify-content: center;
   text-align: center;
+  font-style: italic;
 }
 
 .NYTmobile {
