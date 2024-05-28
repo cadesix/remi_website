@@ -65,6 +65,11 @@ body {
   margin: auto;
 }
 
+.goal {
+  justify-content: center;
+  text-align: center;
+}
+
 .NYTmobile {
   display: none;
 }
@@ -75,7 +80,7 @@ body {
 
 .footerImg {
   width: 72px;
-  margin-top: 96px;
+  margin-top: 48px;
 }
 
 @media (max-width: 600px) {
